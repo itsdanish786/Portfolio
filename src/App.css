@@ -1,0 +1,28 @@
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Resume from "./sections/Resume";
+import Contact from "./sections/Contact";
+import "./index.css";
+
+export default function App() {
+  return (
+    <>
+      <Navbar />
+      <main className="container">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Resume />
+        <Contact />
+
+        <footer className="footer">
+          <p>© {new Date().getFullYear()} Fahad Hussain Danish</p>
+        </footer>
+      </main>
+    </>
+  );
+}
