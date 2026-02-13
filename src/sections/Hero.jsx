@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import TypingEffect from "../components/TypingEffect";
 
 export default function Hero() {
   return (
@@ -8,10 +9,19 @@ export default function Hero() {
           className="dp"
           src="/profile.jpg"
           alt="Fahad Hussain Danish"
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.55, ease: "easeOut" }}
-          whileHover={{ scale: 1.04, rotate: -1 }}
+          initial={{ opacity: 0, scale: 0.5, rotate: -180 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{ 
+            duration: 0.8, 
+            ease: "easeOut",
+            type: "spring",
+            stiffness: 100
+          }}
+          whileHover={{ 
+            scale: 1.08, 
+            rotate: 5,
+            transition: { duration: 0.3 }
+          }}
         />
 
         <div>
@@ -29,7 +39,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.12, ease: "easeOut" }}
           >
-            B.Tech CSE • Full Stack + ML Projects • React / Python / Java
+            <TypingEffect 
+              text="B.Tech CSE • Full Stack + ML Projects • React / Python / Java" 
+              speed={50}
+            />
           </motion.p>
 
           <motion.div

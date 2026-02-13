@@ -1,16 +1,75 @@
-# React + Vite
+# Fahad Hussain Danish - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, creative portfolio website showcasing full-stack and ML projects with stunning animations and interactive effects.
 
-Currently, two official plugins are available:
+## ✨ Creative Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Visual Enhancements
+- **Animated Gradient Background** - Dynamic multi-color radial gradients with breathing animation
+- **Floating Particles** - 30+ animated particles creating depth and movement
+- **Custom Cursor** - Interactive cursor with smooth following effect (desktop only)
+- **Scroll Progress Bar** - Gradient progress indicator at the top
+- **3D Tilt Cards** - Project cards with perspective tilt on mouse movement
+- **Gradient Text** - Beautiful gradient effects on headings
 
-## React Compiler
+### Animations
+- **Typing Effect** - Animated typing in hero section
+- **Stagger Animations** - Sequential reveal of skills and content
+- **Hover Effects** - Smooth transitions on all interactive elements
+- **Scroll Animations** - Elements animate into view as you scroll
+- **Shimmer Effects** - Subtle shine animations on cards
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Interactive Elements
+- **Enhanced Buttons** - Ripple effect and gradient backgrounds
+- **Animated Tags** - Hover effects on technology tags
+- **Smooth Navigation** - Animated navbar with scroll detection
+- **Profile Image** - Rotating gradient border with 3D hover effect
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Framer Motion (animations)
+- Vite (build tool)
+- CSS3 (custom animations & gradients)
+
+## 📦 Installation
+
+```bash
+npm install
+```
+
+## 🏃 Development
+
+```bash
+npm run dev
+```
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+## 🎨 Customization
+
+All colors and effects can be customized in `src/index.css` using CSS variables:
+
+```css
+:root {
+  --bg: #0b0f17;
+  --text: #e8eefc;
+  --muted: #a9b4d0;
+  --accent: #6aa6ff;
+  --accent-2: #a78bfa;
+  --accent-3: #ec4899;
+  --glow: rgba(106,166,255,0.15);
+}
+```
+
+## 📱 Responsive Design
+
+Fully responsive with mobile-optimized layouts and touch-friendly interactions.
+
+---
+
+Built with ❤️ by Fahad Hussain Danish
