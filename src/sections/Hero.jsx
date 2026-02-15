@@ -24,7 +24,7 @@ export default function Hero() {
           }}
         />
 
-        <div>
+        <div className="hero-content">
           <motion.h1
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ export default function Hero() {
             </motion.a>
 
             <motion.a
-              className="btn"
+              className="btn primary"
               href="/resume.pdf"
               target="_blank"
               rel="noreferrer"
@@ -77,7 +77,7 @@ export default function Hero() {
             </motion.a>
 
             <motion.a
-              className="btn primary"
+              className="btn"
               href="/resume.pdf"
               download
               variants={{ hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0 } }}
@@ -86,21 +86,6 @@ export default function Hero() {
             >
               Download Resume
             </motion.a>
-          </motion.div>
-
-          <motion.div
-            className="link-row"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.35, duration: 0.5 }}
-          >
-            <a href="mailto:fahad.12325061@lpu.in">fahad.12325061@lpu.in</a>
-            <a href="https://www.linkedin.com/in/itsdanish786/" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <a href="https://github.com/itsdanish786/" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
           </motion.div>
         </div>
       </div>

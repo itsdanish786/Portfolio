@@ -14,36 +14,33 @@ export default function About() {
           About
         </motion.h2>
 
-        <motion.ul 
-          className="about-list"
-          initial="hidden"
-          whileInView="show"
+        <motion.div 
+          className="about-text"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          variants={{
-            hidden: { opacity: 0 },
-            show: {
-              opacity: 1,
-              transition: { staggerChildren: 0.15 }
-            }
-          }}
+          transition={{ delay: 0.2, duration: 0.6 }}
         >
-          {[
-            { label: "Focus", text: "Full‑stack & applied ML — from dataset to deployable UI." },
-            { label: "Stack", text: "React, Node/Express, MongoDB/MySQL, Python (scikit‑learn)." },
-            { label: "Strengths", text: "Model pipelines, PCA/UMAP visualizations, clean & accessible UI." },
-            { label: "What I build", text: "Dashboards, recommendation systems, and data tools with clear UX." }
-          ].map((item, i) => (
-            <motion.li
-              key={i}
-              variants={{
-                hidden: { opacity: 0, x: -20 },
-                show: { opacity: 1, x: 0 }
-              }}
-            >
-              <strong>{item.label}:</strong> {item.text}
-            </motion.li>
-          ))}
-        </motion.ul>
+          <p>
+            I'm a <strong>B.Tech Computer Science Engineering</strong> student with a passion for building 
+            full-stack applications and machine learning solutions. My focus lies in creating end-to-end 
+            systems that transform raw data into deployable, user-friendly interfaces.
+          </p>
+          
+          <p>
+            I work with modern technologies including <strong>React, Node.js, Express, MongoDB, MySQL, 
+            and Python</strong> with libraries like scikit-learn for machine learning. My expertise spans 
+            from designing model pipelines and creating PCA/UMAP visualizations to building clean, 
+            accessible user interfaces that prioritize user experience.
+          </p>
+          
+          <p>
+            I specialize in developing <strong>dashboards, recommendation systems, and data-driven tools </strong> 
+            that combine powerful backend logic with intuitive frontend design. Whether it's implementing 
+            complex ML algorithms or crafting responsive web applications, I'm committed to delivering 
+            solutions that are both technically robust and visually appealing.
+          </p>
+        </motion.div>
       </Reveal>
     </section>
   );
